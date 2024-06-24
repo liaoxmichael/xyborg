@@ -1,0 +1,8 @@
+I respond to a lot of secret keywords, and you'll figure them out as you go on! My prefix is `xy!`, for reference.
+Here are some commands that I'll give to you, free of charge!
+You can create a reaction poll by including the keyword `poll:` (note the colon!) in your message.
+`xy!ping` allows you to test if the bot is truly functional.
+`xy!say` allows you to literally put words in my mouth!
+`xy!roll` (or `xy!r` for short) allows you to roll dice in the format XdY (1d6, 2d20, etc.). You can use other high-level options, much like the Avrae bot (keeping highest/lowest values, exploding, etc.).
+`xy!answer` or `xy!8ball` allows you to tap my robotic wisdom for a quick 8ball-like answer to your questions!
+`xy!joke` allows you to suffer through my many punny jokes I've stored up. Feel free to DM my creator with more suggestions if you'd like to be part of our collection!

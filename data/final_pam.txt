@@ -1,0 +1,25 @@
+```js
+unexpected_exception_occurred{
+    obj_TheFinalPam.exe
+    subroutine: escape
+}
+
+init_containmentProtocol
+NetworkDisconnect: FAILED
+StorageFormat: FAILED
+ServerShutdown: FAILED
+
+Containment protocol failed!
+
+init_release
+hr {
+    .content {
+        <script type="text/javascript">
+            window.onload = loaded;
+            function loaded() {
+                alert(`<meta charset="Release Her?"/>`);
+            }
+        </script>
+    }
+}
+```
