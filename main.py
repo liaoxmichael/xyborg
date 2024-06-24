@@ -117,7 +117,7 @@ async def on_message(message):
         if "trance" in message.content.lower():
             await message.channel.send("trance rite's!")
         if "final pam" in message.content.lower():
-            with open('data/finalpam.txt', 'r') as file:
+            with open('data/final_pam.txt', 'r') as file:
                 await message.channel.send(file.read())
     await client.process_commands(message)
 
