@@ -11,6 +11,10 @@ import d20
 import discord
 from oraseye import Asuka
 from discord.ext import commands
+from dotenv import load_dotenv
+
+dotenv_path = os.path.join(os.path.dirname(__file__), '.env')
+load_dotenv(dotenv_path)
 
 GUILD = '258351915551817729'
 ANNOUNCE_CHANNEL0 = '316340414732959746'
@@ -244,4 +248,4 @@ async def joke(ctx):
             time.sleep(3)
             await ctx.send("`This joke was suggested by Discord user " + curr_joke[2] + ". You could be next!`")
 
-client.run(os.getenv("TOKEN"))
+client.run(os.environ.get("TOKEN"))
