@@ -6,3 +6,5 @@ You can create a reaction poll by including the keyword `poll:` (note the colon!
 `xy!roll` (or `xy!r` for short) allows you to roll dice in the format XdY (1d6, 2d20, etc.). You can use other high-level options, much like the Avrae bot (keeping highest/lowest values, exploding, etc.).
 `xy!answer` or `xy!8ball` allows you to tap my robotic wisdom for a quick 8ball-like answer to your questions!
 `xy!joke` allows you to suffer through my many punny jokes I've stored up. Feel free to DM my creator with more suggestions if you'd like to be part of our collection!
+`xy!tip` displays a D&D-related tip.
+`xy!quirk` randomly generates a quirk for your NPC. You can optionally provide a name to format the message nicely.

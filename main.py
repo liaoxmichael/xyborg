@@ -265,9 +265,12 @@ async def tip(ctx):
 
 
 @client.command()
-async def quirk(ctx):
+async def quirk(ctx, *args):
     quirks = csv_to_list('data/dnd_npc_quirks.csv')
     quirk = random.choice(quirks)
-    await ctx.send(f'This NPC {quirk[0]}!')
+    if args:
+        await ctx.send(f'{' '.join(args)} {quirk[0]}!')
+    else:
+        await ctx.send(f'This NPC {quirk[0]}!')
 
 client.run(os.environ.get("TOKEN"))
