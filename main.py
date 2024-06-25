@@ -269,7 +269,7 @@ async def quirk(ctx, *args):
     quirks = csv_to_list('data/dnd_npc_quirks.csv')
     quirk = random.choice(quirks)
     if args:
-        await ctx.send(f'{' '.join(args)} {quirk[0]}!')
+        await ctx.send(f"{' '.join(args)} {quirk[0]}!")
     else:
         await ctx.send(f'This NPC {quirk[0]}!')
 
