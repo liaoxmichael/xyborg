@@ -1,0 +1,102 @@
+tip,source
+Do stuff. Be proactive.,Technical Grimoire
+"Scheme often. Dice may fail, but good plans don't roll.",Technical Grimoire
+Ask questions. Take notes.,Technical Grimoire
+Embrace failure. Roll with it.,Technical Grimoire
+Fight dirty. Retreat. Survive.,Technical Grimoire
+The answer is not always on your character sheet.,Technical Grimoire
+The most important thing is to have fun. The second most important thing is to kick ass.,0
+"You can jump a number of feet up to your Strength score if you move at least 10 feet before the jump. Otherwise, you can jump half that.",0
+"You can vertically leap a number of feet equal to 3 + your Strength modifier if you move at least 10 feet before the jump. Otherwise, you can jump half that.",0
+"Sneak Attack can trigger only if you have advantage on the attack roll, or if another enemy of the target is within 5 feet of it and isn't incapacitated.",0
+Spellcasters that aren't proficient with their armor cannot cast spells.,0
+Opportunity attacks trigger when a creature *leaves* your melee attack range.,0
+Your carrying capacity is your Strength score multiplied by 15. You can push/drag/lift up to twice that at full movement; any more and your movement speed drops to 5 feet. These values are doubled for each size category above Medium and halved for each size category below.,0
+Ritually cast spells take 10 extra minutes but no spell slots.,0
+Spells that are pending to be cast via the Ready action require concentration as well.,0
+Darkvision does not distinguish between colors.,0
+"Half cover gives +2 to AC and Dexterity saving throws, and three-quarters cover gives +5.",0
+"The DC for a Concentration (Constitution) save is 10 or the damage that triggered it, whichever is higher.",0
+"Temporary hit points don't stack; you just take the higher one when receiving them.",0
+"When you take the Attack action with a **light** melee weapon, you can use a bonus action to attack with a different light melee weapon in your other hand.",0
+You can move in between actions on your turn; it doesn't have to be all at once.,0
+"In place of the regular Attack action, you can always try to Grapple or Shove a creature.",0
+"You can always take the Dash, Disengage, or Dodge action if you don't know what to do.",0
+You have one free object interaction per turn.,0
+"While Grappling someone, your speed is halved (but theirs is zero).",0
+It costs half your movement speed to mount/dismount an adjacent creature on your turn.,0
+"If your mount is moved while you're on it or you are knocked prone while atop a mount, you must succeed on a DC 10 Dexterity saving throw or fall off.",0
+"If your mount is knocked prone, you must use your reaction to land on your feet; else you land prone as well.",0
+"Generally speaking, mounts can only take the Dash, Disengage, and Dodge actions when you're riding them. The benefits of Disengage are conferred to you, but not Dodge.",0
+"If your mount is controlled, they share your initiative. If they are independent, they maintain theirs.",0
+"If your mount provokes an opportunity attack while you're on it, the attacker can target you or the mount.",0
+"When you Ready an action, you need to also choose a trigger. If the trigger doesn't happen, you lose the action.",0
+"You take 1d6 bludgeoning damage for every 10 feet you fall up to a maximum of 20d6.",0
+"Donning light armor takes 1 minute, medium armor takes 5 minutes, and heavy armor takes 10 minutes.",0
+"Doffing light armor takes 1 minute, medium armor takes 1 minute, and heavy armor takes 5 minutes.",0
+"You can travel for 8 hours a day without risking exhaustion. For each hour afterwards, you must make Exhaustion (Constitution) saves.",0
+"You can either travel at a fast pace (30 miles/day) while risking -5 to your passive Perception scores, normal pace (24 miles/day), or slow pace (18 miles/day) stealthily.",0
+"You can attempt to move through a hostile creature's space using the Overrun or Tumble action.",0
+"Climbing, swimming, and crawling all cost an extra foot of movement for each foot traveled unless you have a dedicated climb/swim/crawl? speed.",0
+"If a flying creature is knocked prone or has its speed reduced to 0, it falls.",0
+"A creature can go without food for a number of days equal to 3 + its Constitution modifier (minimum 1). Afterwards, it suffers 1 level of exhaustion per day.",0
+"A creature needs 1 gallon of water every day, 2 if it is hot. If a creature gets less than half that, it must make a DC 15 Constitution saving throw or gain 1 level of exhaustion.",0
+"Lightly obscured areas impose disadvantage on Perception checks while heavily obscured areas cause creatures to be effectively blinded.",0
+Donning or doffing a shield requires an action.,0
+Drinking antitoxin gives you advantage on saving throws against poison for 1 hour.,0
+"In temperatures of 0 degrees Fahrenheit or below a creature exposed to the cold must make a DC 10 Constitution saving throw each hour or gain one level of exhaustion. Wearing cold weather gear or having immunity to cold damage causes you to automatically save.",0
+"A creature can hold its breath for 1 + its Constitution modifier (minimum of 30 seconds) minutes. After running out of breath it can survive for a number of rounds equal to its Constitution modifier (minimum 1) after which it drops to 0 hit points and is dying.",0
+Living creatures placed inside a bag of holding can survive for 10 minutes before suffocating.,0
+"Dropping prone does not affect your speed and gives attackers disadvantage on ranged attacks against you. Getting up, however, requires half your speed.",0
+"If you're doing a skill challenge as a group, as long as half of the party succeeds, everyone does.",0
+"If you're making a ranged attack while there's a hostile creature within 5 feet of you, you have disadvantage on the attack roll.",0
+"Spells cast from items are still cast by the wielder, so concentration also falls to the wielder, unless otherwise stated.",0
+"Advantage and disadvantage sources don't stack. Regardless of how many sources of each there are, you ultimately only have one instance of each.",0
+Creatures can count as cover for other creatures.,0
+"When attacking a creature with cover, you can miss and hit the cover instead if the attack roll misses the adjusted AC but would have hit them without the cover.",0
+Advantage/disadvantage count as +5/-5 to your passive scores respectively.,0
+"Wizards can cast spells as rituals even without preparing them, so long as they have their spellbook and the necessary components.",0
+Spell components aren't consumed by the spell *unless* they have a cost associated with them.,0
+"If you have a familiar, you can cast touch spells through them, so long as they have a free reaction and are within 100 feet.",0
+You need a free hand to cast spells with somatic components unless otherwise stated.,0
+Bards' Jack of All Trades bonus applies to initiative as well!,0
+"If you go 24 hours without taking a Long Rest, you must make a DC 10 Exhaustion (Constitution) save. For each consecutive 24-hour period without a Long Rest, the DC increases by 5.",0
+"Casting a spell with a long casting time requires you to maintain concentration for the duration. This is especially relevant in ritual casting.",0
+"If you sleep in medium or heavy armor during a Long Rest, you recover only 1/4 of your hit dice, and don't recover Exhaustion. STRIP!!!",0
+"On a clear day, you can see out to 2 miles. On a precipitous day, you can see out to 1 mile. In fog, you can only see out to 100-300 feet. Being up high allows you to see 40 miles out on a clear day.",0
+"Whispers within 10 feet of a sleeping creature won't wake them up *unless* their passive Perception score is 20 or higher.",0
+A sudden loud noise will wake up any creature that is sleeping naturally.,0
+Normal-volume speech won't wake up a sleeping creature *unless* their passive Perception score is 15 or higher.,0
+Vampires can't enter a residence without an invitation.,0
+Vampires take heavy damage if they end their turn in running water.,0
+The central eye of a Beholder projects an antimagic field.,0
+"An otherwise healthy Beholder has ten eyestalks which it can shoot rays from. It can only send out six at maximum each turn, including its legendary actions.",0
+A wooden stake to a vampire's heart will paralyze them.,0
+Fire or acid will halt most forms of natural regeneration.,0
+Liches can only be permanently killed if their soul jar is destroyed.,0
+"If you fight a Rust Monster with metal weapons, expect to visit the general store afterwards to restock.",0
+Undead creatures tend to be immune to poison damage.,0
+"If a fey asks you for your name, be *very* careful about giving it.",0
+Most enemies can be reasoned with or at least deceived. Not all fights need to be fought.,0
+Each dragon has a different breath weapon and elemental resistance. Prepare accordingly.,0
+Many constructs are immune to poison and psychic damage.,0
+Constructs tend to not require sleep or air.,0
+"Fiends often resist or are flat-out immune to poison, fire, cold, and lightning.",0
+"Avoid slashing weapons against oozes, which aren't fazed by such attacks.",0
+"Unsurprisingly, most plants are susceptible to fire damage.",0
+Beasts tend to have lower intelligence.,0
+"Zombies rarely die for good the first time you kill them, unless you use radiant damage.",0
+"Due to their brittle bones, skeletons are vulnerable to bludgeoning damage.",0
+Many golems have some innate magical resistance built in.,0
+"Celestials tend to have powerful healing abilities. Should you be so unlucky as to find one as an opponent, be prepared for a long fight.",0
+Wolves can quickly overwhelm a single target with sheer numbers and their ability to pull down larger prey.,0
+Different cultures and races may have specific customs and taboos. Mind your manners!,0
+Urban areas can be full of pickpockets and con artists. Keep valuables secure and be wary of strangers.,0
+"Ruins and ancient sites often hold valuable treasures, but they may also be guarded by traps or restless spirits.",0
+Local rumors and gossip can provide valuable clues or warnings about nearby threats or opportunities.,0
+Gods and other comparably powerful deities tend to avoid direct intervention in the affairs of mortals. Prayers and offerings can attract their attention.,0
+Astrology and celestial events can have profound effects on magic and prophecy. Pay attention to signs in the sky.,0
+"The ocean depths hide ancient ruins, lost treasures, and terrifying sea monsters. Sail with experienced guides and sturdy ships.",0
+"Time flows differently in some planes; be careful not to step through just any portal, lest you come back to a very different world...",0
+"Many magical creatures can be summoned or bound by specific rituals or offerings. Be wary of making deals with beings of unknown power.",0
+"Many magical items have specific activation conditions or requirements. Experiment carefully to avoid unexpected consequences.",0

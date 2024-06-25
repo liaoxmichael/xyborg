@@ -35,7 +35,7 @@ client = commands.Bot(command_prefix='xy!', activity=activity, intents=intents)
 @client.event
 async def on_ready():
     await client.add_cog(Asuka(client, int(ANNOUNCE_CHANNEL0), int(ANNOUNCE_CHANNEL1)))
-    print("bot online")
+    print(f'{client.user} has connected to Discord!')
 
 
 @client.event
@@ -196,17 +196,16 @@ async def answer(ctx):
 async def joke(ctx):
     with open('data/jokes.csv', newline='') as jokefile:
         jokereader = csv.reader(jokefile)
-        lines = 0
         jokelist = []
         for row in jokereader:
-            if lines == 0:
-                # print("Headers are " + ", ".join(row))
-                lines += 1
-            else:
-                # print(row[0] + "\n" + row[1] + "\n" + row[2] + "\n\n")
-                lines += 1
-                jokelist.append(row)
+            # if lines == 0:
+            #     # print("Headers are " + ", ".join(row))
+            # else:
+            #     # print(row[0] + "\n" + row[1] + "\n" + row[2] + "\n\n")
+            jokelist.append(row)
         # print(lines)
+
+    jokelist = jokelist[1:]  # remove the header
 
     joke = random.randint(0, len(jokelist))
     if joke == len(jokelist):
@@ -246,6 +245,29 @@ async def joke(ctx):
         await ctx.send(curr_joke[1])
         if curr_joke[2] != "0":
             time.sleep(3)
-            await ctx.send("`This joke was suggested by Discord user " + curr_joke[2] + ". You could be next!`")
+            await ctx.send(f"`This joke was suggested by Discord user {curr_joke[2]}. You could be next!`")
+
+
+def csv_to_list(file):
+    with open(file, newline='') as file:
+        reader = csv.reader(file)
+        result = list(reader)[1:]  # skip the header row
+    return result
+
+
+@client.command()
+async def tip(ctx):
+    tips = csv_to_list('data/dnd_tips.csv')
+    tip = random.choice(tips)
+    await ctx.send(tip[0])
+    if tip[1] != "0":
+        await ctx.send(f"`Sourced from {tip[1]}.`")
+
+
+@client.command()
+async def quirk(ctx):
+    quirks = csv_to_list('data/dnd_npc_quirks.csv')
+    quirk = random.choice(quirks)
+    await ctx.send(f'This NPC {quirk[0]}!')
 
 client.run(os.environ.get("TOKEN"))
