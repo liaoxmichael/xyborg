@@ -40,85 +40,82 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-    if message.author != client.user and message.content.startswith("xyborg"):
-        if "play despacito" in message.content.lower():
+    if message.author == client.user:
+        return
+
+    if "xyborg" in message.content.casefold() or client.user.mentioned_in(message):
+        if "play despacito" in message.content.casefold():
             await message.channel.send("https://www.youtube.com/watch?v=W3GrSMYbkBE you're welcome")
-        if "laugh for me" in message.content.lower():
+        if "laugh for me" in message.content.casefold():
             await message.channel.send("ha. ha. ha.")
-    if message.author != client.user:
-        if "vore" in message.content.lower():
-            await message.add_reaction(u"\U0001F61F")  # worried
-        if "xycest" in message.content.lower():
-            await message.channel.send("not this again...")
-        if "loss" in message.content.lower():
-            await message.add_reaction(u"\u261D")  # pointing up
-            await message.add_reaction(u"\U0001F64C")  # hands raised
-            await message.add_reaction(u"\u270C")  # v
-            await message.add_reaction(u"\U0001F919")  # call me
-        if "daxy" in message.content.lower():
-            await message.channel.send("please, i have no lunchables remaining. must you yell?")
-        if "crab" in message.content.lower():
-            await message.channel.send("did you mean :crab: :cl::ab: :crab:")
-        if "scorpion" in message.content.lower():
-            await message.channel.send("Lobster Identified,")
-        if ("69" in message.content) and not re.search(r"<a?:[^:]+:(\d*69\d*)>", message.content):
-            await message.add_reaction(u"\U0001F629")  # weary
-        if ("420" in message.content) and not re.search(r"<a?:[^:]+:(\d*420\d*)>", message.content):
-            await message.add_reaction(u"\U0001F343")  # leaf falling
-            await message.add_reaction(u"\U0001F525")  # fire
-        if ("413" in message.content) and not re.search(r"<a?:[^:]+:(\d*413\d*)>", message.content):
-            await message.add_reaction(u"\U0001F631")  # scream
-            zodiac = random.randint(1, 13)
-            if zodiac == 1:
-                await message.add_reaction(u"\u2648")  # aries
-            elif zodiac == 2:
-                await message.add_reaction(u"\u2649")  # taurus
-            elif zodiac == 3:
-                await message.add_reaction(u"\u264A")  # gemini
-            elif zodiac == 4:
-                await message.add_reaction(u"\u264B")  # cancer
-            elif zodiac == 5:
-                await message.add_reaction(u"\u264C")  # leo
-            elif zodiac == 6:
-                await message.add_reaction(u"\u264D")  # virgo
-            elif zodiac == 7:
-                await message.add_reaction(u"\u264E")  # libra
-            elif zodiac == 8:
-                await message.add_reaction(u"\u264F")  # scorpius
-            elif zodiac == 9:
-                await message.add_reaction(u"\u2650")  # sagittarius
-            elif zodiac == 10:
-                await message.add_reaction(u"\u2651")  # capricorn
-            elif zodiac == 11:
-                await message.add_reaction(u"\u2652")  # aquarius
-            elif zodiac == 12:
-                await message.add_reaction(u"\u2653")  # pisces
-            elif zodiac == 13:
-                await message.add_reaction(u"\u26CE")  # ophiuchus
-        if "bored" in message.content.lower():
-            await message.channel.send("cw nsfw language meme: ||https://imgur.com/MZrOSFl.png||")
-        if "like this post to die instantly" in message.content.lower():
-            await message.add_reaction(u"\U0001F44D")  # thumbs up
-        if "good joke" in message.content.lower():
-            await message.add_reaction(u"\U0001F499")  # blue heart
-        if "thanks xyborg" in message.content.lower():
-            await message.add_reaction(u"\U0001F499")  # blue heart
-        if "bad joke" in message.content.lower():
-            await message.add_reaction(u"\U0001F614")  # pensive
-        if "poll:" in message.content.lower():
-            await message.add_reaction(u"\U0001F44D")  # thumbs up
-            await message.add_reaction(u"\U0001F44E")  # thumbs down
-        if "what's the scoop" in message.content.lower():
-            await message.channel.send("PEPIS! *crashes into a car*")
-        if "mention bowser" in message.content.lower():
-            await message.channel.send("Alrighty! <@172143932673622026>, {0.author.mention} needs you!".format(message))
-        if "mention xy" in message.content.lower():
-            await message.channel.send("Okay! <@232247923683885057>, {0.author.mention} needs you!".format(message))
-        if "trance" in message.content.lower():
-            await message.channel.send("trance rite's!")
-        if "final pam" in message.content.lower():
-            with open('data/final_pam.txt', 'r') as file:
-                await message.channel.send(file.read())
+
+    if "vore" in message.content.casefold() or "xycest" in message.content.casefold() or "daxy" in message.content.casefold():
+        await message.add_reaction(u"\U0001F61F")  # worried
+    if "loss" in message.content.casefold():
+        await message.add_reaction(u"\u261D")  # pointing up
+        await message.add_reaction(u"\U0001F64C")  # hands raised
+        await message.add_reaction(u"\u270C")  # v
+        await message.add_reaction(u"\U0001F919")  # call me
+    # if "crab" in message.content.casefold():
+    #     await message.channel.send("did you mean :crab: :cl::ab: :crab:")
+    # if "scorpion" in message.content.casefold():
+    #     await message.channel.send("Lobster Identified,")
+
+    if ("69" in message.content) and not re.search(r"<(?:a?:[^:]+:|@!?|#|@&)?(\d*69\d*)>", message.content):
+        await message.add_reaction(u"\U0001F629")  # weary
+    if ("420" in message.content) and not re.search(r"<(?:a?:[^:]+:|@!?|#|@&)?(\d*420\d*)>", message.content):
+        await message.add_reaction(u"\U0001F343")  # leaf falling
+        await message.add_reaction(u"\U0001F525")  # fire
+    if ("413" in message.content) and not re.search(r"<(?:a?:[^:]+:|@!?|#|@&)?(\d*413\d*)>", message.content):
+        await message.add_reaction(u"\U0001F631")  # scream
+        zodiac = random.randint(1, 13)
+        if zodiac == 1:
+            await message.add_reaction(u"\u2648")  # aries
+        elif zodiac == 2:
+            await message.add_reaction(u"\u2649")  # taurus
+        elif zodiac == 3:
+            await message.add_reaction(u"\u264A")  # gemini
+        elif zodiac == 4:
+            await message.add_reaction(u"\u264B")  # cancer
+        elif zodiac == 5:
+            await message.add_reaction(u"\u264C")  # leo
+        elif zodiac == 6:
+            await message.add_reaction(u"\u264D")  # virgo
+        elif zodiac == 7:
+            await message.add_reaction(u"\u264E")  # libra
+        elif zodiac == 8:
+            await message.add_reaction(u"\u264F")  # scorpius
+        elif zodiac == 9:
+            await message.add_reaction(u"\u2650")  # sagittarius
+        elif zodiac == 10:
+            await message.add_reaction(u"\u2651")  # capricorn
+        elif zodiac == 11:
+            await message.add_reaction(u"\u2652")  # aquarius
+        elif zodiac == 12:
+            await message.add_reaction(u"\u2653")  # pisces
+        elif zodiac == 13:
+            await message.add_reaction(u"\u26CE")  # ophiuchus
+    # if "bored" in message.content.casefold():
+    #     await message.channel.send("cw nsfw language meme: ||https://imgur.com/MZrOSFl.png||")
+    if "like this post" in message.content.casefold():
+        await message.add_reaction(u"\U0001F44D")  # thumbs up
+    if "good joke" in message.content.casefold():
+        await message.add_reaction(u"\U0001F499")  # blue heart
+    if "thanks xyborg" in message.content.casefold():
+        await message.add_reaction(u"\U0001F499")  # blue heart
+    if "bad joke" in message.content.casefold():
+        await message.add_reaction(u"\U0001F614")  # pensive
+    if "poll:" in message.content.casefold():
+        await message.add_reaction(u"\U0001F44D")  # thumbs up
+        await message.add_reaction(u"\U0001F44E")  # thumbs down
+    if "what's the scoop" in message.content.casefold():
+        await message.channel.send("PEPIS! *crashes into a car*")
+    if "trance" in message.content.casefold() or "trans" in message.content.casefold():
+        await message.add_reaction(u"\U0001F3F3\U0000FE0F\U0000200D\U000026A7\U0000FE0F")  # trans flag?
+        # await message.channel.send("trance rite's!")
+    if "final pam" in message.content.casefold():
+        with open('data/final_pam.txt', 'r') as file:
+            await message.channel.send(file.read())
     await client.process_commands(message)
 
 
@@ -259,7 +256,7 @@ def csv_to_list(file):
 async def tip(ctx):
     tips = csv_to_list('data/dnd_tips.csv')
     tip = random.choice(tips)
-    await ctx.send(tip[0])
+    await ctx.send(f":bulb: {tip[0]}")
     if tip[1] != "0":
         await ctx.send(f"`Sourced from {tip[1]}.`")
 

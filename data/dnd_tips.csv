@@ -20,8 +20,8 @@ Darkvision does not distinguish between colors.,0
 "Temporary hit points don't stack; you just take the higher one when receiving them.",0
 "When you take the Attack action with a **light** melee weapon, you can use a bonus action to attack with a different light melee weapon in your other hand.",0
 You can move in between actions on your turn; it doesn't have to be all at once.,0
-"In place of the regular Attack action, you can always try to Grapple or Shove a creature.",0
-"You can always take the Dash, Disengage, or Dodge action if you don't know what to do.",0
+"In place of the regular Attack action, you can always try to Grapple or Shove a creature.",JaydPerson
+"You can always take the Dash, Disengage, or Dodge action if you don't know what to do.",JaydPerson
 You have one free object interaction per turn.,0
 "While Grappling someone, your speed is halved (but theirs is zero).",0
 It costs half your movement speed to mount/dismount an adjacent creature on your turn.,0
@@ -55,7 +55,7 @@ Living creatures placed inside a bag of holding can survive for 10 minutes befor
 Creatures can count as cover for other creatures.,0
 "When attacking a creature with cover, you can miss and hit the cover instead if the attack roll misses the adjusted AC but would have hit them without the cover.",0
 Advantage/disadvantage count as +5/-5 to your passive scores respectively.,0
-"Wizards can cast spells as rituals even without preparing them, so long as they have their spellbook and the necessary components.",0
+"Wizards can cast spells as rituals even without preparing them, so long as they have their spellbook and the necessary components.",JaydPerson
 Spell components aren't consumed by the spell *unless* they have a cost associated with them.,0
 "If you have a familiar, you can cast touch spells through them, so long as they have a free reaction and are within 100 feet.",0
 You need a free hand to cast spells with somatic components unless otherwise stated.,0
@@ -76,7 +76,7 @@ Fire or acid will halt most forms of natural regeneration.,0
 Liches can only be permanently killed if their soul jar is destroyed.,0
 "If you fight a Rust Monster with metal weapons, expect to visit the general store afterwards to restock.",0
 Undead creatures tend to be immune to poison damage.,0
-"If a fey asks you for your name, be *very* careful about giving it.",0
+"If a fey asks you for your name, be *very* careful about giving it.",JaydPerson
 Most enemies can be reasoned with or at least deceived. Not all fights need to be fought.,0
 Each dragon has a different breath weapon and elemental resistance. Prepare accordingly.,0
 Many constructs are immune to poison and psychic damage.,0
