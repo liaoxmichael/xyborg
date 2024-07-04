@@ -61,12 +61,12 @@ async def on_message(message):
     # if "scorpion" in message.content.casefold():
     #     await message.channel.send("Lobster Identified,")
 
-    if ("69" in message.content) and not re.search(r"<(?:a?:[^:]+:|@!?|#|@&)?(\d*69\d*)>", message.content):
+    if ("69" in message.content) and not re.search(r'\<[^>]*\>', message.content):
         await message.add_reaction(u"\U0001F629")  # weary
-    if ("420" in message.content) and not re.search(r"<(?:a?:[^:]+:|@!?|#|@&)?(\d*420\d*)>", message.content):
+    if ("420" in message.content) and not re.search(r'\<[^>]*\>', message.content):
         await message.add_reaction(u"\U0001F343")  # leaf falling
         await message.add_reaction(u"\U0001F525")  # fire
-    if ("413" in message.content) and not re.search(r"<(?:a?:[^:]+:|@!?|#|@&)?(\d*413\d*)>", message.content):
+    if ("413" in message.content) and not re.search(r'\<[^>]*\>', message.content):
         await message.add_reaction(u"\U0001F631")  # scream
         zodiac = random.randint(1, 13)
         if zodiac == 1:
