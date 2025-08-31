@@ -49,17 +49,14 @@ async def on_message(message):
     
     if client.user.mentioned_in(message):
         user_input = message.content.replace(f"<@!{client.user.id}>", "").strip()
-        print(f"User input: {user_input}")
         
         async with message.channel.typing():
             try:
-                print("Sending request to Hugging Face Space...")
                 gradio_client = Client("liaoxmichael/xyborg")
                 reply = gradio_client.predict(
 		            user_input=user_input,
 		            api_name="/predict"
                 )
-                print(f"Model reply: {reply}")
             except Exception as e:
                 reply = f"Error: {str(e)}"
     
